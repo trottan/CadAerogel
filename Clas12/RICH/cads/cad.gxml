@@ -1,0 +1,4 @@
+<gxml> 
+<volume name="OpticalGasVolume" color="201789" style="wireframe" material="Air_Opt" position="0.000000*cm 0.000000*cm 0.000000*cm" rotation="0 0 0" mother="fc" />
+ <volume name="AerogelTile" color="664444" style="0" material="aerogel_99" position="0.000000*cm 0.000000*cm 0.000000*cm" rotation="0 0 0" mother="OpticalGasVolume" />
+ </gxml>
