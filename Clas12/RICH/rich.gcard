@@ -1,0 +1,54 @@
+<gcard>
+
+	<option name="geometry" value="800x600" />
+    
+     <!-- Forward Carriage -->
+	<detector name="../fc/forwardCarriage"      factory="TEXT" variation="original"/>
+
+
+
+      <!-- central detectors -->
+        <detector name="../bst/bst"               factory="TEXT" variation="original"/>
+	<detector name="../cnd/cnd"               factory="TEXT" variation="original"/>
+       
+
+	<!--	ctof, cad volumes	-->
+	<detector name="../ctof/ctof"             factory="TEXT" variation="cad"/>
+	<detector name="../ctof/javacad/"             factory="CAD"/>
+
+        <!--	DC Detector	-->
+       <detector name="../dc/dc" factory="TEXT" variation="java"/>
+
+   
+
+         <!--  Others   -->
+        <detector name="../ftof/ftof"          factory="TEXT" variation="java"/>
+	<detector name="../ec/ec"              factory="TEXT" variation="original"/>
+	<detector name="../pcal/pcal"          factory="TEXT" variation="java"/>
+      
+
+	<!--	RICH Detector	-->
+       <detector name="../experiments/clas12/rich/javacad/test" factory="CAD"/>
+       <detector name="rich" factory="TEXT" variation="java"/>
+
+
+	<!--	PHYS and OUTPUT	-->
+       <option name="PHYSICS" value="FTFP_BERT + STD + Optical"/>
+
+        <option name="INTEGRATEDRAW" value="rich mirror"/>
+        <option name="RECORD_MIRRORS"     value="1"/>
+        <option name="RECORD_PASSBY"     value="1"/>
+        <option name="OUTPUT"   value="evio, MirrorTest.evio"/>
+
+
+
+        <option name="SCALE_FIELD" value="clas12-torus-big, -1"/>
+	<option name="HALL_FIELD"  value="clas12-solenoid"/>
+       <option name="FIELD_PROPERTIES" value="clas12-torus-big, 10*mm, G4HelixSimpleRunge, linear"/> 
+ 	 <option name="FIELD_PROPERTIES" value="clas12-solenoid,  2*mm, G4HelixSimpleRunge, linear"/>
+
+       
+	<!--	BEAM info	-->
+         <option name="INPUT_GEN_FILE" value="LUND, ./lund/clasdispr.00.e11.000.emn0.75tmn.09.xs65.61nb.dis.0114.dat"/>
+
+</gcard>
