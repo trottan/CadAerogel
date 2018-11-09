@@ -1,5 +1,6 @@
 # CadAerogel
 
+***** REQUIRES GEMC AND COATJAVA ********
 Usage:
 
 1. aerogeltest.csh - shell script to run gemc simulation 
