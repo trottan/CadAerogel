@@ -3,12 +3,6 @@
 #put the source path that you use for your gemc 
 source /home/jlab3/2.2/2.2/ce/jlab.sh #/Users/gangelini/work/CLAS_environment.csh
 
-
-#open files directly for index of refraction
-chmod +x changeaerogel.csh
-./changeaerogel.csh
-
-
 #put the path of your folder
 # put all the tiles there with a certain sequential name
 cd /home/jlab3/Cad/Aer_Test/experiments/clas12/rich/javacad     #/Users/gangelini/work/clas12Tags-master/Aer_Test/experiments/clas12/rich/javacad/

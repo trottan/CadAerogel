@@ -49,7 +49,7 @@ return lambda;
 
 
 
-void pen(){
+void indexfinder(){
 
 double n400fit = 1.0494;
 
@@ -60,7 +60,7 @@ double index[99][71];
 ifstream in, in2, in3;
 ofstream out;
 
-in.open("ref.txt");
+in.open("n400.txt");
 in2.open("p1.txt");
 in3.open("p2.txt");
 if(in.fail() || in2.fail() || in3.fail())
@@ -158,20 +158,20 @@ for(int i = 0; i < 99;i++)
 
 out.open("index.txt");
 
-out << "my @ $irefr_aerogel " << "= ( ";
+//out << "my @ $irefr_aerogel " << "= ( ";
 for(int i = 0; i < 99;i++)
 {
-	out << "[ ";
+	out << "Aerogel tile " << i << "\n";
 	for(int j = 0; j < 71; j++)
 	{
 		out << index[i][j];
 		if(j == 70){out << "";} else {out << ", ";} 
 	}
 
-	out << "],";
+	out << "\n\n";
 
 }
-out << ");";
+
 
 in.close();
 in2.close();

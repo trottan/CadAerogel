@@ -1,17 +1,14 @@
 #!/bin/csh
 
+echo 'Changing Index'
 
+cd /home/jlab3/Cad/Aer_Test/materialoutput #location of file of Index
 
+#Make an Array of PassPort's data
 
-echo 'Hello '
+set PP[12][99]
 
-
-# Open indices of refraction 
-
-cd /home/jlab3/Cad/Aer_Test/materialoutput/index
-
-
-
+echo $PP
 
 
 
