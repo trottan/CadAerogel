@@ -45,4 +45,4 @@ sub buildMirrorsSurfaces
 	print_mir(\%configuration, \%mat);
 }
 
-
+1;
